@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+    src: url('resources/fonts/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'WarIsOver';
+    font-weight: normal;
+    font-style: normal;
+    src: url('resources/fonts/War-is-Over.woff') format('woff2');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+header {
+    padding: 5px;
+    padding-left: 1%;
+    background-color: #85B79D;
+    font-family: 'WarIsOver', sans-serif;
+    
+}
+
+.default {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+article {
+    float: left;
+    width: 80%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items:normal;
+    justify-content: space-around;
+    
+}
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 20px;
+    height: 100%;
+}
+
+.penguin {
+    align-items: center;
+    width :200px;
+    height: 200px;
+    background-image: url(resources/images/penguin.gif);
+    background-repeat: no-repeat;
+	background-size: 100%;
+    animation: example 2s infinite alternate;
+    position: relative;
+    margin-top: 0%;
+    
+}
+
+.bonzi {
+    align-items: center;
+    width :200px;
+    height: 200px;
+    background-image: url(resources/images/bonzi.gif);
+    background-repeat: no-repeat;
+	background-size: 100%;
+    animation: example 2s infinite alternate;
+    position: relative;
+    margin-top: 0%;
+    animation-delay: 500ms;
+}
+
+@keyframes example {
+    0% {top: 0px;}
+    100% {top: 100px;}
+}
+
+
+
+.content {
+    width: auto;
+    height: auto;
+    background-color: #1B1B1E;
+    float:left;
+    align-items: center;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 200px;
+    max-height:500px;
+    float: left;
+}
+
+p.header {
+    padding-left: 10px;
+    font-size: 2em;
+    float: right;
+    font-family: 'WarIsOver', sans-serif;
+    color:#EFEFEF;
+}
+
+p.article {
+    font-size:auto;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    color:#EFEFEF;
+    padding: 5px;
+    text-align: justify;
+}
+
+body {
+    background-color: #C0E5C8;
+
+}
+
+.slicer {
+    height: 20px;
+    width: auto;
+}
