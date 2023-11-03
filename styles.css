@@ -24,17 +24,7 @@ header {
 }
 
 body {
-    height: 4000px;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-}
-
-.bg {
-    background-image: url("resources/images/shc.jpeg");
-    width: 100%;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:#D0D6B3;
 }
 
 .content {
@@ -88,4 +78,18 @@ a.hdbtn {
 
 a.hdbtn:hover{
     color:#EFEFEF
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.frontpage {
+	width: 100%;
+	height: 940px;
+	background-image: url(resources/images/shc.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
