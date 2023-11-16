@@ -24,7 +24,11 @@ header {
 }
 
 body {
-    background:#D0D6B3;
+    background: linear-gradient(120deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+article {
+    background: none;
 }
 
 .content {
