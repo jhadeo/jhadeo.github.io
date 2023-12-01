@@ -8,7 +8,12 @@
     <title>Games4One</title>
 </head>
 
-
+<script>
+    function downloadCV() {
+    var cvLink = "https://drive.google.com/file/d/1Q1IKWWchSAKVqOvzDoDAXkTT27K4_Qom/view?usp=sharing";
+    window.open(cvLink, '_blank');
+  }
+</script>
 
 <body>
     <header>
@@ -28,6 +33,9 @@
         <br>
         <p class="h">ABOUT AUTHOR</p>
         <p class="article" id ="faketext">Jhade Orbigoso wishes to be silent as being informed of the 1987 Constitution of the Philippines, in section 12(1) of Article 3 (Bill of Rights).</p>
+        <button class="btn CV" onclick="downloadCV()">
+            Resume&nbsp;<span><i class="fas fa-arrow-circle-down"></i></span>
+          </button>
         <button type="menu" onclick='document.getElementById("faketext").innerHTML = "The author, Jhade Orbigoso is a second year BSIT Student currently studying at Bulacan State University (Main Campus)."'>Reveal</button>
     </article>
     
