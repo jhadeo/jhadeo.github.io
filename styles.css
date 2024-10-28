@@ -11,6 +11,7 @@ html {
   }
 
 nav {
+    font-size: 1em;
     position: sticky;
     top: 10px;
     margin-bottom: 10px;
@@ -32,6 +33,7 @@ p.navstuff{
 }
 
 a.navlink{
+    font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
     color: #89B6A5;
     text-decoration: none;
@@ -40,7 +42,7 @@ a.navlink{
 
 a.navlink-home{
     position: relative;
-    top: 30%;
+    top: 20%;
     font-family: 'Courier New', Courier, monospace;
     color: #1A1423;
     text-decoration: none;
