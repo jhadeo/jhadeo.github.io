@@ -11,7 +11,6 @@ html {
   }
 
 nav {
-    background-color: #6A706E;
     position: sticky;
     top: 10px;
     margin-bottom: 10px;
@@ -79,7 +78,7 @@ p.foot{
     margin-bottom: 20px;
 }
 
-#about{
+#about, #projects{
     padding: 25px;
     height: 90vh;
     border-color: #82968C;
@@ -93,8 +92,7 @@ p.about-me{
     font-family: 'Courier New', Courier, monospace;
     color: #89B6A5;
     font-size: 2em;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
 p.about-name{
@@ -109,9 +107,11 @@ p.about-name{
     flex-direction: row;
 }
 
-#about-divider {
+#about-divider, #projects-divider {
     height: 80px;
-    margin: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 img.formal-pic{
