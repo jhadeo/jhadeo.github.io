@@ -179,12 +179,8 @@ img.g4oimg {
 }
 
 img.formal {
-    display: inline-flex;
-    float: right;
-    margin: 5px;
-    margin-right: 20px;
     max-width: 75%;
-    max-height: auto;
+    height: auto;
     overflow: hidden;
     border: #82968C;
     border-style: solid;
@@ -203,7 +199,6 @@ img.formal {
 }
 
 .imgthis{
-    margin-left: 50px;
     float: right;
     display: flex;
     align-items: center;
