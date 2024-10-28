@@ -78,9 +78,9 @@ p.foot{
     margin-bottom: 20px;
 }
 
-#about, #projects{
+#about {
     padding: 25px;
-    height: 90vh;
+    max-height: fit-content;
     border-color: #82968C;
     border-style: solid;
     border-width: 1px;
@@ -157,7 +157,6 @@ a.socials{
     width: 100%;
     height: fit-content;
     padding: 25px;
-
     float: left;
     align-items: center;
     margin-bottom: 25px;
@@ -169,6 +168,19 @@ img.g4oimg {
     float: left;
     margin: 5px;
     margin-right: 20px;
-    width: 640px;
-    height: 360px;
+    max-width: 50%;
+    max-height: auto;
+    overflow: hidden;
+
+}
+
+#projects{
+    min-height: fit-content;
+    padding: 25px;
+    max-height: max-content;
+    border-color: #82968C;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
 }
