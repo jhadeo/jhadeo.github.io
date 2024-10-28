@@ -203,6 +203,7 @@ img.formal {
 }
 
 .imgthis{
+    margin-left: 50px;
     float: right;
     display: flex;
     justify-items: center;
