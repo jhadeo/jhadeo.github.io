@@ -68,13 +68,14 @@ a.navlink-home{
 p.circle-text{
     color: #1A1423;
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 10em;
+    font-weight:900;
     margin: 0;
 }
 
 p.foot{
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #1A1423;
     margin: 1px;
     margin-bottom: 20px;
@@ -98,10 +99,11 @@ p.about-me{
 }
 
 p.about-name{
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #89B6A5;
     font-size: 1em;
-    margin: 10px;
+    margin-left: 20px;
+    padding-left: 2PX;
 }
 
 .about-container{
@@ -128,7 +130,7 @@ img.formal-pic{
 }
 
 ul {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #89B6A5;
     list-style-type: none;
 }
@@ -176,6 +178,19 @@ img.g4oimg {
 
 }
 
+img.formal {
+    display: inline-flex;
+    float: right;
+    margin: 5px;
+    margin-right: 20px;
+    max-width: 75%;
+    max-height: auto;
+    overflow: hidden;
+    border: #82968C;
+    border-style: solid;
+    border-width: 1px;
+}
+
 #projects{
     min-height: fit-content;
     padding: 25px;
@@ -185,4 +200,19 @@ img.g4oimg {
     border-width: 1px;
     display: flex;
     flex-direction: column;
+}
+
+.imgthis{
+    float: right;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+p.below-pic{
+    font-family: 'Courier New', Courier, monospace;
+    color: #89B6A5;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 25%;
 }
