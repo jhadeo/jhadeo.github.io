@@ -31,7 +31,7 @@ p.navstuff{
     margin: 0;
 }
 
-a.navlink, a.socials{
+a.navlink{
     font-family: 'Courier New', Courier, monospace;
     color: #89B6A5;
     text-decoration: none;
@@ -85,7 +85,7 @@ p.foot{
     border-style: solid;
     border-width: 1px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 p.about-me{
@@ -99,7 +99,7 @@ p.about-name{
     font-family: "Ubuntu", sans-serif;
     color: #89B6A5;
     font-size: 1em;
-    margin: 1px;
+    margin: 10px;
 }
 
 .about-container{
@@ -130,7 +130,44 @@ ul {
     color: #89B6A5;
     list-style-type: none;
 }
+li {
+    margin: 10px;
+}
 
 a.navlink:hover, a.socials:hover, a.navlink-home:hover {
     text-decoration: underline;
+}
+
+.description{
+    padding:20px;
+}
+
+.lang-learned, .social-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+a.socials{
+    font-family: 'Courier New', Courier, monospace;
+    color: #89B6A5;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.project {
+    width: 98%;
+    height: fit-content;
+    border: 1px solid #82968C;
+    padding: 25px;
+    float: left;
+    align-items: center;
+    margin-bottom: 25px;
+    
+}
+
+img.g4oimg {
+    display: inline-flex;
+    float: left;
+    margin: 5px;
+    width: 640px;
+    height: 360px;
 }
