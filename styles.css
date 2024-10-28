@@ -1,0 +1,136 @@
+body{
+    margin: 10px;
+    background-color: #6A706E;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+nav {
+    background-color: #6A706E;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 10px;
+    border-color: #82968C;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.navstuff{
+    font-family: 'Courier New', Courier, monospace;
+    color: #89B6A5;
+    text-decoration: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+a.navlink, a.socials{
+    font-family: 'Courier New', Courier, monospace;
+    color: #89B6A5;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+a.navlink-home{
+    position: relative;
+    top: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1A1423;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+
+#home{
+    height: 90vh;
+    border: 1px solid #82968C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle closest-side, #BEE3DB, #6A706E);
+    background-size: 100% 100%;
+    background-position: center;
+    transition: background-size 1s ease-in-out;
+    
+}
+
+p.circle-text{
+    color: #1A1423;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10em;
+    margin: 0;
+}
+
+p.foot{
+    font-family: "Ubuntu", sans-serif;
+    color: #1A1423;
+    margin: 1px;
+    margin-bottom: 20px;
+}
+
+#about{
+    padding: 25px;
+    height: 90vh;
+    border-color: #82968C;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+p.about-me{
+    font-family: 'Courier New', Courier, monospace;
+    color: #89B6A5;
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+p.about-name{
+    font-family: "Ubuntu", sans-serif;
+    color: #89B6A5;
+    font-size: 1em;
+    margin: 1px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-divider {
+    height: 80px;
+    margin: 0;
+}
+
+img.formal-pic{
+    display: block;
+    height: 25%;
+    width: 10%;
+    border-radius: 10px;
+}
+
+#home:hover {
+    background-size: 300% 300%; 
+}
+
+ul {
+    font-family: "Ubuntu", sans-serif;
+    color: #89B6A5;
+    list-style-type: none;
+}
+
+a.navlink:hover, a.socials:hover, a.navlink-home:hover {
+    text-decoration: underline;
+}
