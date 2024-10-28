@@ -206,6 +206,7 @@ img.formal {
     margin-left: 50px;
     float: right;
     display: flex;
+    align-items: center;
     justify-items: center;
     flex-direction: column;
 }
@@ -215,5 +216,4 @@ p.below-pic{
     color: #89B6A5;
     text-decoration: none;
     text-align: center;
-    margin-right: 25%;
 }
