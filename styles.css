@@ -4,6 +4,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 html {
@@ -37,7 +38,7 @@ a.navlink{
     font-family: 'Courier New', Courier, monospace;
     color: #89B6A5;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 10px; 
 }
 
 a.navlink-home{
@@ -211,4 +212,33 @@ p.below-pic{
     color: #89B6A5;
     text-decoration: none;
     text-align: center;
+}
+
+
+.footer{
+    font-size: 1em;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 10px;
+    border-color: #82968C;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer1, .footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0;
+}
+
+.footer3{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin:0;
 }
