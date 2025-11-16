@@ -1,121 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Jhade | 2025</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <nav>
-        <p class="navstuff">Jhade Orbigoso | 2025</p>
-        <div class="right-links">
-            <a href="#" class="navlink">Home</a>
-            <a href="#projects-divider" class="navlink">Projects</a>
-            <a href="#about-divider" class="navlink">About</a>
+    <nav class="nav">
+        <div class="window" style="overflow: visible; margin: 0;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">Navigation</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <ul role="menu-bar">
+                <li role="menu-item" tabindex="0" style="font-size: 1.05rem;" aria-haspopup="false">
+                    <a href="#">Home</a>
+                </li>
+
+                <li role="menu-item" tabindex="0" style="font-size: 1.05rem;" aria-haspopup="false">
+                    <a href="#about">About</a>
+                </li>
+
+                <li role="menu-item" tabindex="0" aria-haspopup="true" style="font-size: 1.05rem;">
+                    Projects
+                    <ul role="menu">
+                        <li role="menu-item"><a href="#bjmp">BJMPRO3POS</a></li>
+                        <li role="menu-item"><a href="#sprs">Student Project Repository</a></li>
+                        <li role="menu-item"><a href="#crms">CRMS</a></li>
+                        <li role="menu-item"><a href="#hrms">HRMS</a></li>
+                        <li role="menu-item"><a href="#games4one">Games4One</a></li>
+                    </ul>
+                </li>
+
+                <li role="menu-item" tabindex="0" aria-haspopup="true" style="font-size: 1.05rem;">
+                    Contact
+                    <ul role="menu">
+                        <li role="menu-item"><a href="https://www.linkedin.com/in/jhade-orbigoso/"
+                                target="_blank">LinkedIn</a></li>
+                        <li role="menu-item" class="divider">
+                            <a href="mailto:jhade.orbigoso@gmail.com">Email</a>
+                        </li>
+                        <li role="menu-item"><a href="images/CV.pdf" download="Orbigoso_Jhade_CV.pdf"
+                                target="_blank">Download CV</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        
     </nav>
 
-    <div id="home">
-        <p class="circle-text">Hi!</p>
-        <p class="foot">Welcome to my page, have a nice day!</p>
-        <a href="#projects-divider" class="navlink-home">Check out my projects</a>
-        <a href="#about-divider" class="navlink-home">Who am I?</a>
-    </div>
 
-    <div id="about-divider">
-        <p class="about-me">About Me</p>
-    </div>
-
-    <div id="about">
-        <div class="description">
-            <p class="about-name">Hey there! My name is Jhade Orbigoso, and I am currently studying Bachelor of Science in Information Technology at Bulacan State University.</p>
-            <p class="about-name">My love of computers lead me here, which is great.</p>
-            <p class="about-name">Playing video games is my primary hobby, but looking to expand it in the future (hobbies are expensive!).</p>
-            <div class="lang-learned">
-                <p class="about-me">Program Languages Learned</p>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
+    <div class="window" style="height: 86vh; display: flex; flex-direction: column;">
+        <div class="title-bar">
+            <button aria-label="Close" class="close"></button>
+            <h1 class="title">Welcome</h1>
+            <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="separator"></div>
+        <section style="display: flex; justify-content: center; align-items: center; flex: 1;">
+            <div class="center">
+                <h2 class="paint-content" style="font-size:5vh">Jhade Orbigoso</h2>
+                <p class="dialog-text paint-content">Aspiring Backend Web Developer | IT Student</p>
             </div>
-            <div class="social-div">
-                <p class="about-me">Contact Me</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/jhade-orbigoso/" class = socials>LinkedIn</a></li>
-                    <li><a href="https://www.facebook.com/orbigoso.jhade/" class = socials>Facebook</a></li>
-                    <li><a href="mailto:jhade.orbigoso@gmail.com" class="socials">Email</a></li>
-                </ul>
+        </section>
+        <section style="display: flex; justify-content: center; align-items: flex-end; padding-bottom: 2rem;">
+            <div class="center">
+                <p class="dialog-text">Welcome to my portfolio website! Here, you'll find information about me,
+                    my skills, and my projects.</p>
             </div>
-        </div>
+        </section>
     </div>
 
-    <div id="projects-divider">
-        <p class="about-me">Projects</p>
-    </div>
-    <div id="projects">
-        <div class="project">
-            <img src="images/games4one.png" alt="games4one" class = "g4oimg">
-                <p class="about-me">Games4One - Website</p>
-                <p class="about-name">This is a website I made as an activity for a subject.</p>
-                <p class="about-name">It contains the games I played (since when I made the site), primarily singleplayer games</p>
-                <p class="about-name"><b>Check it out at:</b></p>
-                <a href="http://games4one.github.io" class = "socials" style="padding: 0px; margin: 0;">Github Pages</a>
+    <!-- about section  -->
+    <section class="row">
+        <div class="window" id="about" style="width: 90%; height: fit-content;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">About</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <section class="center" style="padding: 1rem;">
+                <p class="dialog-text">Hey there! My name is Jhade Orbigoso, and I am currently studying Bachelor of
+                    Science in Information
+                    Technology at Bulacan State University.</p>
+                <p class="dialog-text">My love of computers lead me here, which is great.</p>
+                <p class="dialog-text">I'm passionate about coding and software development, and I'm always eager to
+                    learn new technologies
+                    and
+                    improve my skills.</p>
+                <p class="dialog-text">In my free time, I enjoy playing video games, reading tech blogs, and exploring
+                    new (or old)
+                    technologies.</p>
+                <p class="dialog-text">Feel free to explore my projects and get in touch if you'd like to collaborate or
+                    just say hi!</p>
+            </section>
         </div>
-        <div class="project">
-            <img src="images/hrms.png" alt="HrMS" class = "g4oimg">
-            <p class="about-me">Hotel Reservation and Management System</p>
-                <p class="about-name">Group project for OOP2 and ADS, built with Java and SQL (MsSQL) which handles CRUD operations for hotel reservations and room management.</p>
-                <p class="about-name"><b>Built with:</b></p>
+
+        <div class="window" style="width: 10%; margin-left: 1rem;">
+            <div class="title-bar">
+                <h1 class="title">Image</h1>
+            </div>
+            <div class="separator"></div>
+            <section class="profile-img" style="width: 100%;">
+                <img src="images/formal-pic.png" alt="Profile Picture" style="width: 100%; height: auto;">
+                <p class="dialog-text center">That's me!</p>
+            </section>
+        </div>
+    </section>
+
+
+    <!-- projects -->
+    <div class="window center scale-down">
+        <div class="title-bar">
+            <button aria-label="Close" class="close"></button>
+            <h1 class="title">Projects</h1>
+            <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="separator"></div>
+        <section style="padding: .6rem;">
+            <p class="dialog-text">These projects, often made as activities/assignments during my studies, showcase my
+                skills and growth as
+                a developer.</p>
+            <p class="dialog-text">Some might be a bit rough around the edges, but they represent my journey and
+                dedication to learning.</p>
+        </section>
+    </div>
+
+
+    <section class="row">
+        <div class="window" id="bjmp" style="width: 60%; height: fit-content;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">BJMPRO3POS</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <section style="padding: .6rem;">
+                <p class="dialog-text">BJMPRO3POS is a capstone project titled "Biometric Enabled Cashless Jail
+                    Comimissary
+                    Point of Sales and Inventory System"</p>
+                <p class="dialog-text">This project is a Point of Sale System made for jail commissaries of the Bureau
+                    of
+                    Jail Management and Penology - Region 3.</p>
+                <p class="dialog-text">This consists of various modules including inventory management, sales tracking,
+                    commissary statistics, and user biometric authentication.</p>
+                <p class="dialog-text">Project role: Backend Developer</p>
+
+                <p class="dialog-text">Technologies used: PHP, Laravel, MySQL, JavaScript</p>
+
+                <p class="dialog-text">Group: PRISMA</p>
+                <p class="dialog-text">Group Members:</p>
                 <ul>
-                    <li>Adriel Von Vardeleon</li>
-                    <li>Kyren Ken Merenciano</li>
-                    <li>Seven Drew</li>
+                    <li>Nathaniel Angelo Gatchalian</li>
+                    <li>Daniel Geli</li>
+                    <li>Rafael Matthew Manalo</li>
+                    <li>Lowie Josh Roque</li>
+                    <li>Ivan Jethro Velasco</li>
                 </ul>
-                <p class="about-name"><b>Check it out at:</b></p>
-                <a href="https://github.com/jhadeo/HRMSnew" class = "socials" style="padding: 0px; margin: 0;">Github Repository</a>
+            </section>
         </div>
-        <div class="project">
-            
-            <img src="images/crms.png" alt="HrMS" class = "g4oimg">
-            <p class="about-me">Church Reservation and Management System</p>
-                <p class="about-name">Group project for SAD, built with PHP and JS with no framework. Also used XAMPP and ngrok to host site for presentation.</p>
-                <p class="about-name">The project consists e-mail verification for creation and editing of accounts and sending e-mails for confirmation and reminders of said reservations.</p>
 
-                <p class="about-name"><b>Built with:</b></p>
+        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
+            <div class="title-bar">
+                <h1 class="title">Image</h1>
+            </div>
+            <div class="separator"></div>
+            <section class="profile-img" style="width: 100%;">
+                <img src="images/bjmpro3pos.png" alt="BJMPRO3POS" style="width: 100%; height: auto;">
+            </section>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="window" id="sprs" style="width: 60%; height: fit-content;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">Student Project Repository System</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <section style="padding: .6rem;">
+                <p class="dialog-text">Student Project Repository System is a project designed to manage and
+                    organize student projects efficiently.</p>
+                <p class="dialog-text">This is a project meant for implementation of knowledge in Python and Django.</p>
+                <p class="dialog-text">This consists of various modules including version control, project
+                    documentation, and user authentication.</p>
+                <p class="dialog-text">Project role: Backend Developer</p>
+
+                <p class="dialog-text">Technologies used: Python, Django</p>
+
+                <p class="dialog-text">Group Members:</p>
+                <ul>
+                    <li>Joshua Alcaraz</li>
+                    <li>Daniel Geli</li>
+                    <li>Rafael Matthew Manalo</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
+            <div class="title-bar">
+                <h1 class="title">Image</h1>
+            </div>
+            <div class="separator"></div>
+            <section class="profile-img" style="width: 100%;">
+                <img src="images/sprs.png" alt="Student Repository System" style="width: 100%; height: auto;">
+            </section>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="window" id="crms" style="width: 60%; height: fit-content;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">Church Reservation and Management System</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <section style="padding: .6rem;">
+                <p class="dialog-text">Church Reservation and Management System is a project designed to manage church
+                    reservations and events efficiently.</p>
+                <p class="dialog-text">This system allows users to book church facilities, manage event schedules, and
+                    coordinate church activities seamlessly.</p>
+                <p class="dialog-text">This consists of various modules including email notifications, event
+                    reservations and management, and user authentication.</p>
+                <p class="dialog-text">Project role: Full Stack Developer</p>
+
+                <p class="dialog-text">Technologies used: PHP, MySQL, JavaScript</p>
+
+                <p class="dialog-text">Group Members:</p>
                 <ul>
                     <li>Juliana Mhey Castor</li>
                     <li>Daniel Geli</li>
                     <li>Rafael Matthew Manalo</li>
                     <li>Abbygaile Las Piñas</li>
                 </ul>
-                <p class="about-name"><b>GitHub repository private</b></p>
-
+            </section>
         </div>
+
+        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
+            <div class="title-bar">
+                <h1 class="title">Image</h1>
+            </div>
+            <div class="separator"></div>
+            <section class="profile-img" style="width: 100%;">
+                <img src="images/crms.png" alt="Church Reservation and Management System"
+                    style="width: 100%; height: auto;">
+            </section>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
+            <div class="title-bar">
+                <h1 class="title">Image</h1>
+            </div>
+            <div class="separator"></div>
+            <section class="profile-img" style="width: 100%;">
+                <img src="images/hrms.png" alt="Hotel Reservation and Management System"
+                    style="width: 100%; height: auto;">
+            </section>
+        </div>
+
+        <div class="window" id="hrms" style="width: 60%; height: fit-content;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">Hotel Reservation and Management System</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <section style="padding: .6rem;">
+                <p class="dialog-text">Hotel Reservation and Management System is a project designed to manage hotel
+                    reservations and events efficiently.</p>
+                <p class="dialog-text">This system allows users to book hotel facilities, manage event schedules, and
+                    coordinate hotel activities seamlessly.</p>
+                <p class="dialog-text">This project is meant to demonstrate the integration of Microsoft SQL Server and
+                    Java.</p>
+
+                <p class="dialog-text">Project role: Full Stack Developer</p>
+
+                <p class="dialog-text">Technologies used: Java, Microsoft SQL Server</p>
+
+                <p class="dialog-text">Group Members:</p>
+                <ul>
+                    <li>Seven Drew</li>
+                    <li>Adriel Von Vardeleon</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <section class="row">
+
+        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
+            <div class="title-bar">
+                <h1 class="title">Image</h1>
+            </div>
+            <div class="separator"></div>
+            <section class="profile-img" style="width: 100%;">
+                <img src="images/games4one.png" alt="Games4One website" style="width: 100%; height: auto;">
+            </section>
+        </div>
+
+        <div class="window" id="games4one" style="width: 60%; height: fit-content;">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">Games4One website</h1>
+                <button aria-label="Resize" class="resize"></button>
+            </div>
+            <div class="separator"></div>
+            <section style="padding: .6rem;">
+                <p class="dialog-text">Games4One is my personal blog for playing video games.</p>
+                <p class="dialog-text">This site shows my favorite video games and gaming experiences.</p>
+                <p class="dialog-text">This project is meant to be passed as an activity for a certain subject.</p>
+
+                <p class="dialog-text">Project role: Developer</p>
+
+                <p class="dialog-text">Technologies used: HTML, CSS, JavaScript</p>
+
+            </section>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <div class="window center scale-down">
+        <div class="title-bar">
+            <button aria-label="Close" class="close"></button>
+            <h1 class="title">Contact</h1>
+            <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="separator"></div>
+        <div class="details-bar" style="display: flex; justify-content: space-between;">
+            <a href="https://www.linkedin.com/in/jhade-orbigoso/" target="_blank">LinkedIn</a>
+            <a href="mailto:jhade.orbigoso@gmail.com">Email</a>
+            <a href="images/CV.pdf" download="Orbigoso_Jhade_CV.pdf" target="_blank">Get my CV</a>
+        </div>
+        <section style="padding: .6rem;">
+            <p class="dialog-text">If you want to get in touch, feel free to reach out via LinkedIn or email by clicking
+                the links above!</p>
+            <p class="dialog-text">I'm always open to discussing new projects, collaborations, or opportunities to learn
+                and grow.</p>
+            <p class="dialog-text">You could also download my CV to learn more about my background and skills.</p>
+        </section>
     </div>
 
-    <footer>
-        <div class="footer1">
-            <p class="about-name" style="margin: 10px;">Jhade Orbigoso | 2025</p>
-
-        </div>
-        
-        <div class="footer2">
-            <p class="about-name" style="margin: 10px;">Socials</p>
-            <div class="footer3">
-                <a href="https://www.facebook.com/orbigoso.jhade/" class = socials>Facebook</a>
-                <a href="https://www.instagram.com/jhdeio/" class = socials>Instagram</a>
-            </div>
-            
-        </div>
-        
+    <footer style ="display: flex; justify-content: flex-end;">
+        <p class="dialog-text"><a href="https://github.com/sakofchit/system.css">CSS Library by sakofchit (system.css)</a></p>
     </footer>
-</body> 
-</html>
+</body>
 
+</html>
