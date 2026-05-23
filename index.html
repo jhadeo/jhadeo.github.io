@@ -2,358 +2,267 @@
 <html lang="en">
 
 <head>
-    <title>Jhade | 2025</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ae14f0c62d.js" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js" async></script>
+    <title id="site-year">Jhade's Portfolio</title>
 </head>
 
-<body>
-    <nav class="nav">
-        <div class="window" style="overflow: visible; margin: 0;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">Navigation</h1>
-                <button aria-label="Resize" class="resize"></button>
+<body class="bg-base-200">
+    <!-- Header -->
+    <header class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#stack">Tech</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="separator"></div>
-            <ul role="menu-bar">
-                <li role="menu-item" tabindex="0" style="font-size: 1.05rem;" aria-haspopup="false">
-                    <a href="#">Home</a>
-                </li>
+            <p class="text-xl mx-3">jhadeo</p>
+            <label class="swap swap-rotate ml-3">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" class="theme-controller" id="theme-controller" />
 
-                <li role="menu-item" tabindex="0" style="font-size: 1.05rem;" aria-haspopup="false">
-                    <a href="#about">About</a>
-                </li>
+                <!-- sun icon -->
+                <svg class="swap-off h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                </svg>
 
-                <li role="menu-item" tabindex="0" aria-haspopup="true" style="font-size: 1.05rem;">
-                    Projects
-                    <ul role="menu">
-                        <li role="menu-item"><a href="#bjmp">BJMPRO3POS</a></li>
-                        <li role="menu-item"><a href="#sprs">Student Project Repository</a></li>
-                        <li role="menu-item"><a href="#crms">CRMS</a></li>
-                        <li role="menu-item"><a href="#hrms">HRMS</a></li>
-                        <li role="menu-item"><a href="#games4one">Games4One</a></li>
-                    </ul>
-                </li>
-
-                <li role="menu-item" tabindex="0" aria-haspopup="true" style="font-size: 1.05rem;">
-                    Contact
-                    <ul role="menu">
-                        <li role="menu-item"><a href="https://www.linkedin.com/in/jhade-orbigoso/"
-                                target="_blank">LinkedIn</a></li>
-                        <li role="menu-item" class="divider">
-                            <a href="mailto:jhade.orbigoso@gmail.com">Email</a>
-                        </li>
-                        <li role="menu-item"><a href="images/CV.pdf" download="Orbigoso_Jhade_CV.pdf"
-                                target="_blank">Download CV</a></li>
-                    </ul>
-                </li>
+                <!-- moon icon -->
+                <svg class="swap-on h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                </svg>
+            </label>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#about">About</a></li>
+                <li><a href="#stack">Tech</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
-
-
-    <div class="window" style="height: 86vh; display: flex; flex-direction: column;">
-        <div class="title-bar">
-            <button aria-label="Close" class="close"></button>
-            <h1 class="title">Welcome</h1>
-            <button aria-label="Resize" class="resize"></button>
+        <div class="navbar-end">
+            <a class="btn" href="/files/cv.pdf" download="Jhade Orbigoso - CV.pdf">Get my CV</a>
         </div>
-        <div class="separator"></div>
-        <section style="display: flex; justify-content: center; align-items: center; flex: 1;">
-            <div class="center">
-                <h2 class="paint-content" style="font-size:5vh">Jhade Orbigoso</h2>
-                <p class="dialog-text paint-content">Aspiring Backend Web Developer | IT Student</p>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero min-h-screen mb-5" style="background-image: url(images/banner.jpg);">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div>
+                <h1 class="mb-5 text-5xl font-bold">Building digital solutions from concept to deployment.</h1>
+                <p class="mb-5">Check out my projects and open-source work.</p>
+                <a href="#projects" class="btn">View Projects</a>
             </div>
-        </section>
-        <section style="display: flex; justify-content: center; align-items: flex-end; padding-bottom: 2rem;">
-            <div class="center">
-                <p class="dialog-text">Welcome to my portfolio website! Here, you'll find information about me,
-                    my skills, and my projects.</p>
-            </div>
-        </section>
+        </div>
     </div>
 
-    <!-- about section  -->
-    <section class="row">
-        <div class="window" id="about" style="width: 90%; height: fit-content;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">About</h1>
-                <button aria-label="Resize" class="resize"></button>
+    <!-- About Section -->
+    <div class="hero bg-base-200 min-h-screen" id="about">
+        <div class="hero-content flex-col lg:flex-row">
+            <div class="flex flex-col items-center">
+                <img src="/images/portrait/lightmode.JPG" class="max-w-sm rounded-lg shadow-2xl" id="portrait"
+                    class="max-w-sm rounded-lg shadow-2xl" alt="Portrait" />
+                <p class="text-center text-sm mt-4 text-base-content/70" id="themeMessage">It's bright and sunny here</p>
             </div>
-            <div class="separator"></div>
-            <section class="center" style="padding: 1rem;">
-                <p class="dialog-text">Hey there! My name is Jhade Orbigoso, and I am currently studying Bachelor of
-                    Science in Information
-                    Technology at Bulacan State University.</p>
-                <p class="dialog-text">My love of computers lead me here, which is great.</p>
-                <p class="dialog-text">I'm passionate about coding and software development, and I'm always eager to
-                    learn new technologies
-                    and
-                    improve my skills.</p>
-                <p class="dialog-text">In my free time, I enjoy playing video games, reading tech blogs, and exploring
-                    new (or old)
-                    technologies.</p>
-                <p class="dialog-text">Feel free to explore my projects and get in touch if you'd like to collaborate or
-                    just say hi!</p>
-            </section>
-        </div>
-
-        <div class="window" style="width: 10%; margin-left: 1rem;">
-            <div class="title-bar">
-                <h1 class="title">Image</h1>
+            <div>
+                <p class="text-xl mb-2">Hello, I'm</p>
+                <h1 class="text-5xl font-bold mb-6">Jhade Orbigoso</h1>
+                <p class="py-4">
+                    A backend-focused developer specializing in Laravel, PHP, and business applications with hands-on
+                    experience in deployed systems, API integrations, and AI-assisted web platforms.
+                </p>
+                <p class="py-4">
+                    Graduate of Bulacan State University with a Bachelor's degree in Information Technology.
+                </p>
+                <p class="py-4">
+                    I'm building while learning—check out my other projects and experience below!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 mt-6">
+                    <a class="btn btn-primary" href="/files/cv.pdf" download="Jhade Orbigoso - CV.pdf">Get my CV</a>
+                    <a href="https://github.com/jhadeo" target="_blank" class="btn btn-accent gap-2">
+                        <i class="fa-brands fa-github text-lg"></i>
+                        Check my GitHub
+                    </a>
+                </div>
             </div>
-            <div class="separator"></div>
-            <section class="profile-img" style="width: 100%;">
-                <img src="images/formal-pic.png" alt="Profile Picture" style="width: 100%; height: auto;">
-                <p class="dialog-text center">That's me!</p>
-            </section>
         </div>
-    </section>
-
-
-    <!-- projects -->
-    <div class="window center scale-down">
-        <div class="title-bar">
-            <button aria-label="Close" class="close"></button>
-            <h1 class="title">Projects</h1>
-            <button aria-label="Resize" class="resize"></button>
-        </div>
-        <div class="separator"></div>
-        <section style="padding: .6rem;">
-            <p class="dialog-text">These projects, often made as activities/assignments during my studies, showcase my
-                skills and growth as
-                a developer.</p>
-            <p class="dialog-text">Some might be a bit rough around the edges, but they represent my journey and
-                dedication to learning.</p>
-        </section>
     </div>
 
+    <!-- Tech Stack -->
+    <section class="py-20 px-6" id="stack">
+        <h1 class="text-center text-5xl bg-base-200 font-bold mb-3">Tech Stack</h1>
+        <p class="text-base text-center mb-8">Here are the technologies and tools I commonly use.</p>
 
-    <section class="row">
-        <div class="window" id="bjmp" style="width: 60%; height: fit-content;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">BJMPRO3POS</h1>
-                <button aria-label="Resize" class="resize"></button>
-            </div>
-            <div class="separator"></div>
-            <section style="padding: .6rem;">
-                <p class="dialog-text">BJMPRO3POS is a capstone project titled "Biometric Enabled Cashless Jail
-                    Comimissary
-                    Point of Sales and Inventory System"</p>
-                <p class="dialog-text">This project is a Point of Sale System made for jail commissaries of the Bureau
-                    of
-                    Jail Management and Penology - Region 3.</p>
-                <p class="dialog-text">This consists of various modules including inventory management, sales tracking,
-                    commissary statistics, and user biometric authentication.</p>
-                <p class="dialog-text">Project role: Backend Developer</p>
-
-                <p class="dialog-text">Technologies used: PHP, Laravel, MySQL, JavaScript</p>
-
-                <p class="dialog-text">Group: PRISMA</p>
-                <p class="dialog-text">Group Members:</p>
-                <ul>
-                    <li>Nathaniel Angelo Gatchalian</li>
-                    <li>Daniel Geli</li>
-                    <li>Rafael Matthew Manalo</li>
-                    <li>Lowie Josh Roque</li>
-                    <li>Ivan Jethro Velasco</li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
-            <div class="title-bar">
-                <h1 class="title">Image</h1>
-            </div>
-            <div class="separator"></div>
-            <section class="profile-img" style="width: 100%;">
-                <img src="images/bjmpro3pos.png" alt="BJMPRO3POS" style="width: 100%; height: auto;">
-            </section>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10" id="techStackContainer">
+            <!-- Tech stack items generated by JavaScript -->
         </div>
     </section>
 
-    <section class="row">
-        <div class="window" id="sprs" style="width: 60%; height: fit-content;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">Student Project Repository System</h1>
-                <button aria-label="Resize" class="resize"></button>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <h1 class="text-center text-5xl bg-base-200 font-bold mt-16" id="projects">Projects</h1>
+        <section class="bg-base-200 flex flex-col lg:flex-row gap-4 justify-center py-10 px-4 flex-wrap">
+
+
+            <!-- Davies Chatbot -->
+            <div class="card bg-base-100 w-full sm:w-96 shadow-sm">
+                <figure>
+                    <img src="/images/projects/ai-chatbot/auth.png" alt="chatbot" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Davies — Client Support Chatbot</h2>
+                    <p>Built the web UI and backend APIs for a client support chatbot integrating a hybrid RAG
+                        (retrieval +
+                        generative) system. Connected retrieval and generation pipelines to ensure reliable data flow
+                        and
+                        smooth user interactions.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary" id="davies-gallery">Project Gallery</button>
+                    </div>
+                </div>
             </div>
-            <div class="separator"></div>
-            <section style="padding: .6rem;">
-                <p class="dialog-text">Student Project Repository System is a project designed to manage and
-                    organize student projects efficiently.</p>
-                <p class="dialog-text">This is a project meant for implementation of knowledge in Python and Django.</p>
-                <p class="dialog-text">This consists of various modules including version control, project
-                    documentation, and user authentication.</p>
-                <p class="dialog-text">Project role: Backend Developer</p>
 
-                <p class="dialog-text">Technologies used: Python, Django</p>
-
-                <p class="dialog-text">Group Members:</p>
-                <ul>
-                    <li>Joshua Alcaraz</li>
-                    <li>Daniel Geli</li>
-                    <li>Rafael Matthew Manalo</li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
-            <div class="title-bar">
-                <h1 class="title">Image</h1>
+            <!-- BJMPRO3POS -->
+            <div class="card bg-base-100 w-full sm:w-96 shadow-sm">
+                <figure>
+                    <img src="/images/projects/bjmp-pos/bjmpro3pos.png" alt="BJMPRO3POS" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">BJMPRO3POS</h2>
+                    <p>A biometric enabled jail commissary point of sales and inventory system currently used by
+                        correctional facilities in
+                        Region III.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary" id="pos-gallery">Project Gallery</button>
+                    </div>
+                </div>
             </div>
-            <div class="separator"></div>
-            <section class="profile-img" style="width: 100%;">
-                <img src="images/sprs.png" alt="Student Repository System" style="width: 100%; height: auto;">
-            </section>
-        </div>
-    </section>
 
-    <section class="row">
-        <div class="window" id="crms" style="width: 60%; height: fit-content;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">Church Reservation and Management System</h1>
-                <button aria-label="Resize" class="resize"></button>
+            <!-- Parish Reservation -->
+            <div class="card bg-base-100 w-full sm:w-96 shadow-sm">
+                <figure>
+                    <img src="/images/projects/crms/admin-dashboard.png" alt="Parish Reservation Dashboard" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Parish Reservation System</h2>
+                    <p>Parish Reservation System for Ina ng Saklolo Parish (Hagonoy, Bulacan) — includes email
+                        notifications
+                        and an at-a-glance staff calendar for managing reservations.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-secondary" id="crms-gallery">Project Gallery</button>
+                        <a href="https://github.com/jhadeo/parish-reservation" target="_blank"
+                            class="btn btn-primary">Check
+                            Repository</a>
+                    </div>
+                </div>
             </div>
-            <div class="separator"></div>
-            <section style="padding: .6rem;">
-                <p class="dialog-text">Church Reservation and Management System is a project designed to manage church
-                    reservations and events efficiently.</p>
-                <p class="dialog-text">This system allows users to book church facilities, manage event schedules, and
-                    coordinate church activities seamlessly.</p>
-                <p class="dialog-text">This consists of various modules including email notifications, event
-                    reservations and management, and user authentication.</p>
-                <p class="dialog-text">Project role: Full Stack Developer</p>
 
-                <p class="dialog-text">Technologies used: PHP, MySQL, JavaScript</p>
-
-                <p class="dialog-text">Group Members:</p>
-                <ul>
-                    <li>Juliana Mhey Castor</li>
-                    <li>Daniel Geli</li>
-                    <li>Rafael Matthew Manalo</li>
-                    <li>Abbygaile Las Piñas</li>
-                </ul>
-            </section>
-        </div>
-
-        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
-            <div class="title-bar">
-                <h1 class="title">Image</h1>
+            <!-- Hotel Reservation (Java) -->
+            <div class="card bg-base-100 w-full sm:w-96 shadow-sm">
+                <figure>
+                    <img src="/images/projects/hrms.png" alt="HRMS" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Hotel Reservation and Management System</h2>
+                    <p>Java application for hotel and event management — supports room reservations, event scheduling,
+                        and
+                        guest check-in.</p>
+                    <div class="card-actions justify-end">
+                        <a href="https://github.com/jhadeo/HRMSnew" target="_blank" class="btn btn-primary">Check
+                            Repository</a>
+                    </div>
+                </div>
             </div>
-            <div class="separator"></div>
-            <section class="profile-img" style="width: 100%;">
-                <img src="images/crms.png" alt="Church Reservation and Management System"
-                    style="width: 100%; height: auto;">
-            </section>
-        </div>
-    </section>
 
-    <section class="row">
-        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
-            <div class="title-bar">
-                <h1 class="title">Image</h1>
-            </div>
-            <div class="separator"></div>
-            <section class="profile-img" style="width: 100%;">
-                <img src="images/hrms.png" alt="Hotel Reservation and Management System"
-                    style="width: 100%; height: auto;">
-            </section>
-        </div>
-
-        <div class="window" id="hrms" style="width: 60%; height: fit-content;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">Hotel Reservation and Management System</h1>
-                <button aria-label="Resize" class="resize"></button>
-            </div>
-            <div class="separator"></div>
-            <section style="padding: .6rem;">
-                <p class="dialog-text">Hotel Reservation and Management System is a project designed to manage hotel
-                    reservations and events efficiently.</p>
-                <p class="dialog-text">This system allows users to book hotel facilities, manage event schedules, and
-                    coordinate hotel activities seamlessly.</p>
-                <p class="dialog-text">This project is meant to demonstrate the integration of Microsoft SQL Server and
-                    Java.</p>
-
-                <p class="dialog-text">Project role: Full Stack Developer</p>
-
-                <p class="dialog-text">Technologies used: Java, Microsoft SQL Server</p>
-
-                <p class="dialog-text">Group Members:</p>
-                <ul>
-                    <li>Seven Drew</li>
-                    <li>Adriel Von Vardeleon</li>
-                </ul>
-            </section>
-        </div>
-    </section>
-
-    <section class="row">
-
-        <div class="window" style="width: 40%; margin-left: 1rem; height:fit-content">
-            <div class="title-bar">
-                <h1 class="title">Image</h1>
-            </div>
-            <div class="separator"></div>
-            <section class="profile-img" style="width: 100%;">
-                <img src="images/games4one.png" alt="Games4One website" style="width: 100%; height: auto;">
-            </section>
-        </div>
-
-        <div class="window" id="games4one" style="width: 60%; height: fit-content;">
-            <div class="title-bar">
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title">Games4One website</h1>
-                <button aria-label="Resize" class="resize"></button>
-            </div>
-            <div class="separator"></div>
-            <section style="padding: .6rem;">
-                <p class="dialog-text">Games4One is my personal blog for playing video games.</p>
-                <p class="dialog-text">This site shows my favorite video games and gaming experiences.</p>
-                <p class="dialog-text">This project is meant to be passed as an activity for a certain subject.</p>
-
-                <p class="dialog-text">Project role: Developer</p>
-
-                <p class="dialog-text">Technologies used: HTML, CSS, JavaScript</p>
-
-            </section>
-        </div>
-    </section>
-
-    <!-- contact -->
-
-    <div class="window center scale-down">
-        <div class="title-bar">
-            <button aria-label="Close" class="close"></button>
-            <h1 class="title">Contact</h1>
-            <button aria-label="Resize" class="resize"></button>
-        </div>
-        <div class="separator"></div>
-        <div class="details-bar" style="display: flex; justify-content: space-between;">
-            <a href="https://www.linkedin.com/in/jhade-orbigoso/" target="_blank">LinkedIn</a>
-            <a href="mailto:jhade.orbigoso@gmail.com">Email</a>
-            <a href="images/CV.pdf" download="Orbigoso_Jhade_CV.pdf" target="_blank">Get my CV</a>
-        </div>
-        <section style="padding: .6rem;">
-            <p class="dialog-text">If you want to get in touch, feel free to reach out via LinkedIn or email by clicking
-                the links above!</p>
-            <p class="dialog-text">I'm always open to discussing new projects, collaborations, or opportunities to learn
-                and grow.</p>
-            <p class="dialog-text">You could also download my CV to learn more about my background and skills.</p>
         </section>
-    </div>
+    </section>
 
-    <footer style ="display: flex; justify-content: flex-end;">
-        <p class="dialog-text"><a href="https://github.com/sakofchit/system.css">CSS Library by sakofchit (system.css)</a></p>
+
+    <!-- Project Gallery Modal -->
+    <dialog id="galleryModal" class="modal">
+        <div class="modal-box w-11/12 max-w-4xl p-0">
+            <!-- Mockup Window -->
+            <div class="mockup-window border border-base-300 bg-base-100">
+                <div class="bg-base-200 px-4 py-2">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-semibold" id="projectTitle">Gallery</span>
+                        <button class="btn btn-sm btn-ghost"
+                            onclick="document.getElementById('galleryModal').close()">✕</button>
+                    </div>
+                </div>
+
+                <!-- Image Container -->
+                <div class="px-4 py-6 flex justify-center">
+                    <img id="galleryImage" src="" alt="Gallery image" class="max-h-96 object-contain rounded-lg" />
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="px-4 py-4 bg-base-100 flex justify-between items-center gap-4">
+                    <button class="btn btn-sm" id="prevBtn" onclick="previousImage()">← Previous</button>
+                    <span id="imageCounter" class="text-sm font-semibold">Image 1 of 1</span>
+                    <button class="btn btn-sm" id="nextBtn" onclick="nextImage()">Next →</button>
+                </div>
+
+                <!-- Image Thumbnails -->
+                <div class="px-4 py-4 bg-base-200 flex gap-2 overflow-x-auto">
+                    <div id="thumbnailContainer" class="flex gap-2">
+                        <!-- Thumbnails will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal backdrop click to close -->
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-6 bg-base-200" id="contact">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-lg mb-8 text-base-content/80">Have a question or want to collaborate? Feel free to reach out!
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://www.linkedin.com/in/jhade-orbigoso/" target="_blank" class="btn btn-primary gap-2">
+                    <i class="fa-brands fa-linkedin text-lg"></i>
+                    Connect on LinkedIn
+                </a>
+                <a href="mailto:jhadeo@example.com" class="btn btn-secondary gap-2">
+                    <i class="fa-solid fa-envelope text-lg"></i>
+                    Send an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+        <aside>
+            <p>Copyright © - <span id="footer_year"></span> jhadeo</p>
+        </aside>
     </footer>
 </body>
 
