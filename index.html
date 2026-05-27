@@ -25,7 +25,7 @@
                             d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
-                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow">
                     <li><a href="#about">About</a></li>
                     <li><a href="#stack">Tech</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -79,8 +79,10 @@
     <div class="hero bg-base-200 min-h-screen" id="about">
         <div class="hero-content flex-col lg:flex-row gap-8 lg:gap-12 px-4 md:px-8">
             <div class="flex flex-col items-center shrink-0">
-                <img src="/images/portrait/lightmode.jpg" class="w-full max-w-sm rounded-lg shadow-2xl" id="portrait" alt="Portrait" />
-                <p class="text-center text-sm mt-4 text-base-content/70" id="themeMessage">It's bright and sunny here</p>
+                <img src="/images/portrait/lightmode.jpg" class="w-full max-w-sm rounded-lg shadow-2xl" id="portrait"
+                    alt="Portrait" />
+                <p class="text-center text-sm mt-4 text-base-content/70" id="themeMessage">It's bright and sunny here
+                </p>
             </div>
             <div class="max-w-2xl">
                 <p class="text-xl mb-2">Hello, I'm</p>
@@ -135,6 +137,7 @@
                         generative) system. Connected retrieval and generation pipelines to ensure reliable data flow
                         and
                         smooth user interactions.</p>
+                    <p class="text-red-700">Repository not available</p>
                     <div class="card-actions justify-end">
                         <button class="btn btn-primary" id="davies-gallery">Project Gallery</button>
                     </div>
@@ -151,6 +154,7 @@
                     <p>A biometric enabled jail commissary point of sales and inventory system currently used by
                         correctional facilities in
                         Region III.</p>
+                    <p class="text-red-700">Repository not available</p>
                     <div class="card-actions justify-end">
                         <button class="btn btn-primary" id="pos-gallery">Project Gallery</button>
                     </div>
@@ -262,7 +266,7 @@
         <aside>
             <p>Copyright © - <span id="footer_year"></span> jhadeo</p>
         </aside>
-                <aside>
+        <aside>
             <p>Built with Tailwind CSS & DaisyUI</p>
         </aside>
     </footer>
